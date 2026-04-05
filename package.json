@@ -1,0 +1,13 @@
+{
+  "name": "darjeeling-school-redemption",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:frontend": "cd my-school-app && npm run dev",
+    "dev:backend": "cd Backend && node server.js",
+    "dev": "npx concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "install:all": "npm install && cd my-school-app && npm install && cd ../Backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
